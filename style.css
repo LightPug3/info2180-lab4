@@ -1,67 +1,123 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f5;
+    font-family: "Arial", sans-serif;
+    background-color: #121212; /* dark black background for dramatic effect */
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: #f1f1f1; /* light text for contrast */
 }
 
+/* main container */
 .container {
     text-align: center;
-    background: white;
-    padding: 20px 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    width: 600px;
+    background: linear-gradient(145deg, #2b2b2b, #1a1a1a); /* subtle black gradient */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* strong shadow for emphasis */
+    width: 650px;
 }
 
+/* header title */
 h1 {
-    color: #333;
+    color: #e23636; /* marvel red */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: "Impact", sans-serif;                    /* bold superhero-like font */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);        /* dramatic text shadow */
 }
 
+/* search bar styling */
 .search-bar {
     margin: 20px 0;
     display: flex;
     gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
+/* input field */
 #searchInput {
     flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: 12px;
+    border: 1px solid #007bff; /* captain America blue border */
     border-radius: 5px;
     font-size: 16px;
+    color: #fff;
+    background-color: #1f1f1f; /* dark input field */
+    width: 70%;
 }
 
+/* input field placeholder text */
+#searchInput::placeholder {
+    color: #888;
+}
+
+/* search button */
 #searchButton {
-    padding: 10px 20px;
+    padding: 12px 20px;
     font-size: 16px;
     color: white;
     background-color: #007bff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.5);          /* glowing effect */
 }
 
+/* button hover effect */
 #searchButton:hover {
     background-color: #0056b3;
+    transform: scale(1.05);                       /* slight zoom on hover */
 }
 
+/* result box styling */
 #result {
     margin-top: 20px;
-    text-align: left;
+    padding: 20px;
+    border: 2px solid #007bff;                  /* captain america themed blue border */
+    border-radius: 10px;
+    background-color: #1a1a1a;                  /* dark grey for results */
     font-size: 16px;
+    text-align: left;
+    color: #f1f1f1;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.5); /* glowing blue effect */
 }
 
-h3, h4 {
-    margin: 0;
+/* result header (alias) */
+h3 {
+    color: #e5c100; /* Gold (Iron Man inspiration) */
+    font-weight: bold;
 }
 
+/* result subheader (name) */
+h4 {
+    color: #007bff; /* Captain America blue */
+    margin-top: 5px;
+}
+
+/* result text (biography) */
 p {
-    margin: 10px 0;
-    color: #555;
+    color: #f1f1f1;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* superhero list styling */
+ul {
+    padding: 0;
+    list-style: none;
+    color: #f1f1f1;
+}
+
+li {
+    padding: 5px 0;
+    border-bottom: 1px solid #444; /* subtle divider between items */
+}
+
+li:last-child {
+    border-bottom: none;
 }

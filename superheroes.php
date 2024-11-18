@@ -72,8 +72,8 @@ if ($query) {
 
     if ($result) {
         $superhero = array_values($result)[0];
-        echo "<h3>Alias: {$superhero['alias']}</h3>";
-        echo "<h4>{$superhero['name']}</h4>";
+        echo "<h3>{$superhero['alias']}</h3>";
+        echo "<h4>Alias: {$superhero['name']}</h4>";
         echo "<p>{$superhero['biography']}</p>";
     } else {
         echo "<p style='color: red; font-weight: bold;'>Superhero not found</p>";
