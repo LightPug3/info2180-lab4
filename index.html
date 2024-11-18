@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Superheroes Search</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Superheroes List</h1>
-        <button id="searchButton">Search</button>
+        <h1>Avengers Superheroes Database</h1>
+        <p>Search for a superhero by name or alias, or leave the field blank to see the full list.</p>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Enter superhero name or alias">
+            <button id="searchButton">Search</button>
+        </div>
+        <div id="result"></div>
     </div>
     <script src="app.js"></script>
 </body>
